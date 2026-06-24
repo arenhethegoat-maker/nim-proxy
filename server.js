@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 // NVIDIA API config
 const NVIDIA_API_URL = "https://integrate.api.nvidia.com/v1";
 const NVIDIA_API_KEY = process.env.NVIDIA_API_KEY;
-const MODEL = "moonshotai/kimi-k2-instruct"; // Kimi K2 on NVIDIA NIM
+const MODEL = process.env.MODEL || "moonshotai/kimi-k2.6";
 
 app.use(express.json({ limit: "10mb" }));
 
